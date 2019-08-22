@@ -1,0 +1,28 @@
+<hr>
+<button type="button" ng-click="$ctrl.refresh()" class="button">Reload</button>
+<hr>
+<h3>Contacts number: {{contacts.length}}</h3>
+<table ng-show="contacts.length > 0" class="table">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Telephone</th>
+        <th>Address</th>
+        <th>Id</th>
+        <th></th>
+    </tr>
+
+    </thead>
+    <tbody>
+    <tr ng-repeat="contact in contacts">
+        <td>{{contact.name}}</td>
+        <td>{{contact.surname}}</td>
+        <td>{{contact.tel}}</td>
+        <td>{{contact.address}}</td>
+        <td>{{contact._id}}</td>
+        <td><button type="button" ng-click="$ctrl.delete(contact._id)">Delete</button> </td>
+    </tr>
+    </tbody>
+</table>
+<hr>

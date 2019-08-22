@@ -1,0 +1,14 @@
+<h3>Contact data, url:{{$ctrl.addUrl}}, contact:{{$ctrl.contact}} </h3>
+<form>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input  type="text" class="form-control" ng-model="$ctrl.contact.name">
+        <label for="surname">Surname:</label>
+        <input  type="text" class="form-control" ng-model="$ctrl.contact.surname">
+        <label for="tel">Tel:</label>
+        <input  type="text" class="form-control" ng-model="$ctrl.contact.tel">
+        <label for="address">Address:</label>
+        <input  type="text" class="form-control" ng-model="$ctrl.contact.address">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="$ctrl.saveContact()">Submit</button>
+</form>
